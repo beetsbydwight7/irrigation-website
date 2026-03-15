@@ -1,0 +1,26 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node
+node_modules/
+package-lock.json
+
+# Tailwind build output
+dist/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Swift build artifacts
+.build/
+*.o
+*.d
