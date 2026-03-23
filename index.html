@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -7,6 +7,26 @@
     <title>All The Buzz Sprinklers | Expert Sprinkler Systems & Repair</title>
     <meta name="description"
         content="Top-rated local irrigation company. We specialize in system installation, repairs, and winterization. Get a free quote today!">
+    <meta property="og:title" content="All The Buzz Sprinklers | Expert Sprinkler Systems & Repair">
+    <meta property="og:description" content="Top-rated local irrigation company. We specialize in system installation, repairs, and winterization. Get a free quote today!">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="img/logo.png">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "All The Buzz Sprinklers",
+        "description": "Professional irrigation system installation, repair, winterization, and maintenance services.",
+        "image": "img/logo.png",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Albertville",
+            "addressRegion": "MN"
+        },
+        "areaServed": "Twin Cities and surrounding areas",
+        "serviceType": ["Irrigation Installation", "Sprinkler Repair", "Winterization", "Spring Startup"]
+    }
+    </script>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,10 +52,6 @@
         }
     </script>
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-
         .hero-bg {
             background-color: #1B4D3E;
             background-image: linear-gradient(rgba(27, 77, 62, 0.8), rgba(27, 77, 62, 0.7)), url('https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&q=80');
@@ -46,6 +62,7 @@
 </head>
 
 <body class="text-gray-800 bg-neutral-light antialiased pt-20">
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[60] focus:bg-white focus:text-primary focus:px-4 focus:py-2 focus:rounded-md focus:shadow-lg">Skip to main content</a>
 
     <!-- Navigation -->
     <nav class="bg-white shadow-md fixed w-full z-50 top-0 left-0">
@@ -68,7 +85,7 @@
                         a Quote</a>
                 </div>
                 <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-primary focus:outline-none">
+                    <button id="mobile-menu-btn" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle navigation menu" class="text-gray-700 hover:text-primary focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2 rounded-md">
                         <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M4 6h16M4 12h16M4 18h16" />
@@ -93,7 +110,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="relative h-screen min-h-[600px] flex items-center justify-center text-center text-white hero-bg">
+    <section id="main-content" class="relative h-screen min-h-[600px] flex items-center justify-center text-center text-white hero-bg">
         <div class="absolute inset-0 bg-black bg-opacity-40"></div>
         <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <img src="img/logo.png" alt="All The Buzz Sprinklers Logo"
@@ -376,17 +393,6 @@
                 <div>
                     <h3 class="text-lg font-semibold mb-4 text-accent">Contact Us</h3>
                     <ul class="space-y-4">
-                        <li class="flex items-start text-gray-300">
-                            <svg class="w-6 h-6 mr-3 text-secondary flex-shrink-0" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
-                                </path>
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                            </svg>
-                            123 Green Grass Lane<br>Albertville, MN and Surrounding areas
-                        </li>
                         <li class="flex items-center text-gray-300">
                             <svg class="w-6 h-6 mr-3 text-secondary flex-shrink-0" fill="none" stroke="currentColor"
                                 viewBox="0 0 24 24">
@@ -394,17 +400,17 @@
                                     d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
                                 </path>
                             </svg>
-                            (555) 123-4567
+                            (763) 442-0738
                         </li>
                     </ul>
                 </div>
             </div>
             <div
                 class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm">
-                <p>&copy; 2024 All The Buzz Sprinklers. All rights reserved.</p>
+                <p>&copy; 2025 All The Buzz Sprinklers. All rights reserved.</p>
                 <div class="flex space-x-4 mt-4 md:mt-0">
-                    <a href="#" class="hover:text-white transition">Privacy Policy</a>
-                    <a href="#" class="hover:text-white transition">Terms of Service</a>
+                    <span>Privacy Policy</span>
+                    <span>Terms of Service</span>
                 </div>
             </div>
         </div>
