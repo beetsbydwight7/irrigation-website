@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -7,6 +7,10 @@
     <title>Project Gallery | All The Buzz Sprinklers Work</title>
     <meta name="description"
         content="View our portfolio of lush green lawns and professional sprinkler installations. See the difference a All The Buzz Sprinklers system makes for your landscape.">
+    <meta property="og:title" content="Project Gallery | All The Buzz Sprinklers">
+    <meta property="og:description" content="View our portfolio of lush green lawns and professional sprinkler installations.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="img/logo.png">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,14 +51,11 @@
             }
         }
     </script>
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-    </style>
+
 </head>
 
 <body class="text-gray-800 bg-neutral-light antialiased pt-20">
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[60] focus:bg-white focus:text-primary focus:px-4 focus:py-2 focus:rounded-md focus:shadow-lg">Skip to main content</a>
 
     <!-- Navigation -->
     <nav class="bg-white shadow-md fixed w-full z-50 top-0 left-0">
@@ -77,7 +78,7 @@
                         a Quote</a>
                 </div>
                 <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-primary focus:outline-none">
+                    <button id="mobile-menu-btn" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle navigation menu" class="text-gray-700 hover:text-primary focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2 rounded-md">
                         <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M4 6h16M4 12h16M4 18h16" />
@@ -102,7 +103,7 @@
     </nav>
 
     <!-- Page Header -->
-    <section class="bg-primary text-white py-20 text-center">
+    <section id="main-content" class="bg-primary text-white py-20 text-center">
         <h1 class="text-4xl md:text-5xl font-bold mb-4">Our Work</h1>
         <p class="text-xl max-w-2xl mx-auto text-green-100">See the difference professional irrigation makes for our
             satisfied clients.</p>
@@ -113,9 +114,9 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Project 1 -->
-                <div class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer h-72">
+                <div class="gallery-item group relative overflow-hidden rounded-xl shadow-lg cursor-pointer h-72">
                     <img src="https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&q=80"
-                        alt="Lush Green Lawn"
+                        alt="Lush Green Lawn" loading="lazy"
                         class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
                     <div
                         class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
@@ -124,9 +125,9 @@
                 </div>
 
                 <!-- Project 2 -->
-                <div class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer h-72">
+                <div class="gallery-item group relative overflow-hidden rounded-xl shadow-lg cursor-pointer h-72">
                     <img src="img/real_leak_detection.jpg"
-                        alt="Sprinkler Repair"
+                        alt="Sprinkler Repair" loading="lazy"
                         class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
                     <div
                         class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
@@ -135,9 +136,9 @@
                 </div>
 
                 <!-- Project 3 -->
-                <div class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer h-72">
+                <div class="gallery-item group relative overflow-hidden rounded-xl shadow-lg cursor-pointer h-72">
                     <img src="img/gallery_drip.png"
-                        alt="Garden Irrigation"
+                        alt="Garden Irrigation" loading="lazy"
                         class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
                     <div
                         class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
@@ -146,9 +147,9 @@
                 </div>
 
                 <!-- Project 4 -->
-                <div class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer h-72">
+                <div class="gallery-item group relative overflow-hidden rounded-xl shadow-lg cursor-pointer h-72">
                     <img src="img/real_sprinkler_action.jpg"
-                        alt="Large Estate"
+                        alt="Large Estate" loading="lazy"
                         class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
                     <div
                         class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
@@ -157,9 +158,9 @@
                 </div>
 
                 <!-- Project 5 -->
-                <div class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer h-72">
+                <div class="gallery-item group relative overflow-hidden rounded-xl shadow-lg cursor-pointer h-72">
                     <img src="img/real_trenching.jpg"
-                        alt="Sprinkler Installation"
+                        alt="Sprinkler Installation" loading="lazy"
                         class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
                     <div
                         class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
@@ -168,9 +169,9 @@
                 </div>
 
                 <!-- Project 6 -->
-                <div class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer h-72">
+                <div class="gallery-item group relative overflow-hidden rounded-xl shadow-lg cursor-pointer h-72">
                     <img src="img/gallery_flowerbed.png"
-                        alt="Flower Bed"
+                        alt="Flower Bed" loading="lazy"
                         class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
                     <div
                         class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
@@ -181,7 +182,7 @@
 
             <div class="mt-16 text-center">
                 <p class="text-2xl font-bold text-gray-800 mb-6">Want results like these?</p>
-                <a href="contact.html" class="btn-primary inline-block">Get Your Free Quote</a>
+                <a href="contact.html" class="inline-block bg-primary hover:bg-primary-light text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out shadow-md">Get Your Free Quote</a>
             </div>
         </div>
     </section>
@@ -250,10 +251,15 @@
             </div>
             <div
                 class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm">
-                <p>&copy; 2024 All The Buzz Sprinklers. All rights reserved.</p>
+                <p>&copy; 2025 All The Buzz Sprinklers. All rights reserved.</p>
             </div>
         </div>
     </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="fixed inset-0 z-[60] bg-black/80 hidden items-center justify-center p-4 cursor-pointer">
+        <img id="lightbox-img" src="" alt="" class="max-w-full max-h-[90vh] rounded-lg shadow-2xl">
+    </div>
 
     <script src="js/main.js"></script>
 </body>

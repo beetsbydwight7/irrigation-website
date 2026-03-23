@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -7,6 +7,10 @@
     <title>About Us | All The Buzz Sprinklers History & Team</title>
     <meta name="description"
         content="Meet the All The Buzz Sprinklers team. We are a locally owned and operated irrigation company dedicated to water conservation and customer satisfaction since 2010.">
+    <meta property="og:title" content="About Us | All The Buzz Sprinklers">
+    <meta property="og:description" content="Meet the All The Buzz Sprinklers team. Locally owned and operated, dedicated to water conservation and customer satisfaction.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="img/logo.png">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,14 +51,11 @@
             }
         }
     </script>
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-    </style>
+
 </head>
 
 <body class="text-gray-800 bg-neutral-light antialiased pt-20">
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[60] focus:bg-white focus:text-primary focus:px-4 focus:py-2 focus:rounded-md focus:shadow-lg">Skip to main content</a>
 
     <!-- Navigation -->
     <nav class="bg-white shadow-md fixed w-full z-50 top-0 left-0">
@@ -77,7 +78,7 @@
                         a Quote</a>
                 </div>
                 <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-primary focus:outline-none">
+                    <button id="mobile-menu-btn" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle navigation menu" class="text-gray-700 hover:text-primary focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2 rounded-md">
                         <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M4 6h16M4 12h16M4 18h16" />
@@ -102,7 +103,7 @@
     </nav>
 
     <!-- Page Header -->
-    <section class="bg-primary text-white py-20 text-center">
+    <section id="main-content" class="bg-primary text-white py-20 text-center">
         <h1 class="text-4xl md:text-5xl font-bold mb-4">About All The Buzz Sprinklers</h1>
         <p class="text-xl max-w-2xl mx-auto text-green-100">Local experts dedicated to greener lawns and smarter water
             use.</p>
@@ -113,7 +114,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row items-center gap-12">
                 <div class="md:w-1/2">
-                    <img src="img/markus_truck.jpg" alt="All The Buzz Sprinklers Truck and Team"
+                    <img src="img/markus_truck.jpg" loading="lazy" alt="All The Buzz Sprinklers Truck and Team"
                         class="rounded-xl shadow-lg w-full h-[400px] object-cover">
                 </div>
                 <div class="md:w-1/2">
@@ -268,7 +269,7 @@
             </div>
             <div
                 class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm">
-                <p>&copy; 2024 All The Buzz Sprinklers. All rights reserved.</p>
+                <p>&copy; 2025 All The Buzz Sprinklers. All rights reserved.</p>
             </div>
         </div>
     </footer>
