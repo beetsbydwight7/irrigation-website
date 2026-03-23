@@ -172,11 +172,18 @@
                         </div>
                     </div>
 
-                    <!-- Cal.com Scheduling Widget -->
+                    <!-- Jobber Scheduling Widget -->
                     <div class="mt-4">
-                        <h3 class="text-lg font-bold text-gray-900 mb-3">📅 Schedule a Consultation</h3>
-                        <p class="text-gray-600 text-sm mb-4">Pick a time that works for you and we'll reach out to discuss your project.</p>
-                        <div id="cal-inline" style="width:100%;height:600px;overflow:auto;border-radius:12px;border:1px solid #e5e7eb;"></div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-3">Schedule a Job</h3>
+                        <p class="text-gray-600 text-sm mb-4">Book a service online and we'll get you on the schedule.</p>
+                        <!-- TODO: Replace YOUR-COMPANY-ID with your Jobber online booking UUID -->
+                        <iframe
+                            src="https://clienthub.getjobber.com/booking/YOUR-COMPANY-ID"
+                            style="width:100%;height:700px;border:none;border-radius:12px;"
+                            title="Book a service with All The Buzz Sprinklers"
+                            loading="lazy"
+                            allow="geolocation">
+                        </iframe>
                     </div>
                 </div>
 
@@ -308,48 +315,6 @@
     </footer>
 
     <script src="js/main.js"></script>
-    <!-- Cal.com Embed Script -->
-    <script type="text/javascript">
-        (function (C, A, L) {
-            let p = function (a, ar) { a.q.push(ar); };
-            let d = C.document;
-            C.Cal = C.Cal || function () {
-                let cal = C.Cal;
-                let ar = arguments;
-                if (!cal.loaded) {
-                    cal.ns = {};
-                    cal.q = cal.q || [];
-                    d.head.appendChild(d.createElement("script")).src = A;
-                    cal.loaded = true;
-                }
-                if (ar[0] === L) {
-                    const api = function () { p(api, arguments); };
-                    const namespace = ar[1];
-                    api.q = api.q || [];
-                    if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar);
-                    return;
-                }
-                p(cal, ar);
-            };
-        })(window, "https://app.cal.com/embed/embed.js", "init");
-
-        // TODO: Replace 'YOUR-USERNAME/consultation' with your actual Cal.com event URL
-        Cal("init", { origin: "https://app.cal.com" });
-        Cal("inline", {
-            elementOrSelector: "#cal-inline",
-            calLink: "YOUR-USERNAME/consultation",
-            layout: "month_view",
-            config: {
-                theme: "light"
-            }
-        });
-        Cal("ui", {
-            theme: "light",
-            styles: { branding: { brandColor: "#1B4D3E" } },
-            hideEventTypeDetails: false,
-            layout: "month_view"
-        });
-    </script>
 </body>
 
 </html>
